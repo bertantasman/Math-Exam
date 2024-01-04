@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/usluSayilar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="270dp"
+        android:onClick="onClick"
+        android:text="Exponents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/FaktoriyelID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/FaktoriyelID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="270dp"
+        android:text="Factorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usluSayilar"
+        app:layout_constraintTop_toBottomOf="@+id/KokBulma" />
+
+    <Button
+        android:id="@+id/KokBulma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="onClick"
+        android:text="Square Root"
+        app:layout_constraintBottom_toTopOf="@+id/FaktoriyelID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="60dp"
+        android:text="Basic Operation"
+        app:layout_constraintBottom_toTopOf="@+id/usluSayilar"
+        app:layout_constraintEnd_toStartOf="@+id/KokBulma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="147dp"
+        android:text="Math Exam"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

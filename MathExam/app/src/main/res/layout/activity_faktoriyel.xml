@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.math.mathexam.Faktoriyel">
+
+    <TextView
+        android:id="@+id/fifthnumber"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fourthnumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fourthnumber" />
+
+    <TextView
+        android:id="@+id/secondnumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdnumber"
+        app:layout_constraintEnd_toStartOf="@+id/thirdnumber"
+        app:layout_constraintStart_toEndOf="@+id/firstnumber"
+        app:layout_constraintTop_toTopOf="@+id/thirdnumber" />
+
+    <TextView
+        android:id="@+id/fourthnumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="213dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/ansButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstnumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thirdnumber"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="17dp"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fourthnumber"
+        app:layout_constraintEnd_toStartOf="@+id/fourthnumber"
+        app:layout_constraintStart_toEndOf="@+id/secondnumber" />
+
+    <TextView
+        android:id="@+id/firstnumber"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="144dp"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/secondnumber"
+        app:layout_constraintEnd_toStartOf="@+id/fourthnumber"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/userNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/showAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/quButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:onClick="quClick"
+        android:text="Question"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ansButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ansButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="323dp"
+        android:onClick="ansClick"
+        android:text="Answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthnumber" />
+
+    <TextView
+        android:id="@+id/resres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/thirdnumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/ansButton"
+        app:layout_constraintEnd_toStartOf="@+id/ansButton" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="134dp"
+        android:onClick="exitBu"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fourthnumber"
+        app:layout_constraintStart_toStartOf="@+id/secondnumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
