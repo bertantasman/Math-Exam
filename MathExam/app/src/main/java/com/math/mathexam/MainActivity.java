@@ -23,35 +23,21 @@ public class MainActivity extends AppCompatActivity {
         usluSayilar = findViewById(R.id.usluSayilar);
         FaktoriyelID=findViewById(R.id.FaktoriyelID);
 
-        KokBulma.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, KokBulmaca.class);
-                startActivity(intent);
-            }
-        });
-
-        usluSayilar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, usluRakamlar.class);
-                startActivity(intent);
-            }
-        });
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Basit.class);
-                startActivity(intent);
-            }
-        });
-        FaktoriyelID.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Faktoriyel.class);
-                startActivity(intent);
-            }
-        });
+    }
+    public void basClick(View view){
+        Intent intent = new Intent(MainActivity.this, Basit.class);
+        startActivity(intent);
+    }
+    public void sqClick(View view){
+        Intent intent = new Intent(MainActivity.this, KokBulmaca.class);
+        startActivity(intent);
+    }
+    public void exClick(View view){
+        Intent intent = new Intent(MainActivity.this, usluRakamlar.class);
+        startActivity(intent);
+    }
+    public void facClick(View view){
+        Intent intent = new Intent(MainActivity.this, Faktoriyel.class);
+        startActivity(intent);
     }
 }
